@@ -5,14 +5,21 @@ class Even
 	{
 		System.out.println("Enter your number");
 		Scanner scan=new Scanner(System.in);
-		int a=scan.nextInt();
-		if ( a%2 == 0)
+		try
 		{
-			System.out.println("Even");
+			int a=scan.nextInt();
+			if ( a%2 == 0)
+			{
+				System.out.println("Even");
+			}
+			else
+			{
+				System.out.println("Odd");
+			}
 		}
-		else
+		catch(Exception e)
 		{
-			System.out.println("Odd");
-		}
+			System.out.println("Invalid");
+		}	
 	}
 }
