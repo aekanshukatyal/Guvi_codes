@@ -25,5 +25,10 @@ void prime(int n)
     int a;
     printf("Enter no");
     scanf("%d",&a);
-    prime(a);
-    }
+    if(a>0)
+        {
+            prime(a);
+        }
+    else{printf("no");}
+    }    
+        
